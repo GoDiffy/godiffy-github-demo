@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Capture and upload screenshots
-      uses: MichaelFisher1997/godiffy-github-actions@dev
+      uses: GoDiffy/godiffy-github-actions@dev
       with:
         api-key: ${{ secrets.GODIFFY_API_KEY }}
         site-id: 9b85b790-c00e-4cfa-aed8-848617a6dd8d
@@ -38,7 +38,7 @@ jobs:
       run: sleep 5
 
     - name: Run visual regression comparison
-      uses: MichaelFisher1997/godiffy-github-actions@dev
+      uses: GoDiffy/godiffy-github-actions@dev
       with:
         api-key: ${{ secrets.GODIFFY_API_KEY }}
         site-id: 9b85b790-c00e-4cfa-aed8-848617a6dd8d
